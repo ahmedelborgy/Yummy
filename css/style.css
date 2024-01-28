@@ -1,0 +1,192 @@
+*{
+padding: 0px;
+margin: 0px;
+box-sizing: border-box;
+
+}
+a{
+    text-decoration: none;
+
+}
+
+
+h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+}
+/* main-class */
+
+.d-center{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+:root{
+    --main-color: #0D0D0D;
+}
+
+body{
+    background-color: #0D0D0D;
+    color: #f9f6f6 !important;
+    overflow: hidden ;
+}
+.cursor-pointer{
+    cursor: pointer;
+}
+i,li{
+    cursor: pointer;
+}
+.alert{
+    /* width: fit-content; */
+    background-color: aqua;
+}
+
+/* ----------------- */
+
+
+
+
+ul{
+    list-style-type: none;
+}
+/* custom section  */
+
+
+/* <!-- =============start side Navbar Section======================== --> */
+
+
+
+.side-nav-menu{
+    z-index: 99;
+}
+
+
+.nav-tab {
+   background-color: tomato !important;
+   /* padding-right: 0rem; */
+}
+
+.nav-tab{
+    background-color: #0D0D0D !important;
+}
+
+
+.logo{
+    width: 50px;
+}
+
+
+
+.side-nav-menu .links li{
+    position: relative;
+}
+
+
+
+/* <!-- =============End side Navbar Section =========================--> */
+
+
+
+
+
+
+
+
+
+/* =============Start main Section =========== */
+
+.meal,.meal-A{
+    position: relative;
+    /* width: 100%; */
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.meal-layer{
+    width: 100%; 
+    height: 100%;
+    position: absolute  ;
+    background-color: rgb(224, 212, 212);
+    top:120%;
+    left: 0px;
+     right: 0px;
+     bottom: 0px;
+    z-index: 10;
+    transition: 1s all;
+}
+.meal:hover .meal-layer{
+    top: 0;
+}
+
+
+
+#contact{
+    height: 600px;
+    /* background-color: aqua; */
+}
+
+.loading-screen {
+    z-index: 999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.inner-loading-screen{
+    position: absolute;
+    z-index: 9;
+    background-color: #0D0D0D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#mysearch{
+    position: relative;
+    z-index: 10;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* =============End main Section =========== */
