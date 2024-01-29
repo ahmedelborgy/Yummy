@@ -93,7 +93,7 @@ function displyMeals(list) {
     str += `<section class="col-md-3 p-3">
  
   <div class="meal" onclick="getMealsDetails(${idMeal})"  id-m="${is_link == 'search' ? idMeal : ''}">
-    <p>${is_link == 'search' ? idMeal : ''}</p>
+    
       <img src="${is_link == 'search' && list.length != 28 ? strMealThumb : strCategoryThumb}" class="w-100" alt="">
       <div class="meal-layer  d-flex justify-content-center flex-column  text-black text-capitalize">
       <h3 class="p">${is_link == 'search' ? strMeal : strCategory}</h3>
@@ -400,7 +400,7 @@ async function searchByLetter(term) {
 $(document).ready(function () {
   serchByName("").then(() => {
     $('.loading-screen').fadeOut(500)
-    $('body').css({ overflow: 'visible' })
+    $('body').css({ overflowY: 'visible' })
     $('.inner-loading-screen').fadeOut(500)
   })
 
@@ -449,7 +449,7 @@ $('#is_contact').click((e) => {
 <div class="col-md-6">
 <input id="ageInput" onkeyup="inputsValidation()" type="number" class="form-control " placeholder="Enter Your Age">
 <div id="ageAlert" class="alert alert-danger w-100 mt-2 d-none">
-    Enter valid age
+    Enter valid age from {10:80}
 </div>
 </div>
 
@@ -603,11 +603,13 @@ function emailValidation() {
 }
 
 function phoneValidation() {
-  return (/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test(document.getElementById("phoneInput").value))
+  // return (/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/.test(document.getElementById("phoneInput").value))
+return (/^0[125][0-9]{9}$/.test(document.getElementById("phoneInput").value))
 }
 
 function ageValidation() {
-  return (/^(0?[1-9]|[1-9][0-9]|[1][1-9][1-9]|200)$/.test(document.getElementById("ageInput").value))
+  // return (/^(0?[1-9]|[1-9][0-9]|[1][1-9][1-9]|200)$/.test(document.getElementById("ageInput").value))
+  return (/^([1-7][0-9]|80)$/.test(document.getElementById("ageInput").value))
 }
 
 function passwordValidation() {
